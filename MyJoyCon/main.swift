@@ -49,7 +49,7 @@ let matchingCallback: IOHIDDeviceCallback = {context, result, sender, device in
 
             let element = IOHIDValueGetElement(value)
             let cookie = IOHIDElementGetCookie(element)
-            if cookie != 1202 {
+            if cookie != 45 {
                 return
             }
             let code = IOHIDValueGetIntegerValue(value)
